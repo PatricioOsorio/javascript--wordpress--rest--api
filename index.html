@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordpress RES API</title>
+    <link rel="stylesheet" href="styles/normalize-8.0.1-min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <h1>Wordpress RES API</h1>
+    <article class="site"></article>
+    <section class="posts"></section>
+    <div class="loader lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <template class="post-template">
+      <article class="post">
+        <img class="post__image" />
+        <aside>
+          <h2 class="post__title"></h2>
+          <figure class="post__author"></figure>
+          <small class="post__date"></small>
+          <a href="" class="post__link" target="_blank"
+            >Ver publicacion original</a
+          >
+          <p class="post__excerp"></p>
+          <div class="post__categories"></div>
+          <div class="post__tags"></div>
+          <details class="post__content">
+            <summary>Ver contenido de la publicacion</summary>
+            <article></article>
+          </details>
+        </aside>
+      </article>
+      <hr />
+    </template>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
